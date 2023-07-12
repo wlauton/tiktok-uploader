@@ -35,9 +35,9 @@ user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 	cookie_of_interest = "sessionid" # cookie to check if login was successful
 	
 	[selectors.upload]
-	iframe = "//iframe"
+	iframe = "//*[@id='root']/div[2]/div[2]/div/div/iframe"
 	
-	upload_video = "//input[@type='file']"
+	upload_video = "//*[@id='root']/div/div/div/div/div/div/div/input"
 	upload_in_progress = "//*[.='Cancel']"
 	upload_confirmation = "//video" 
 	process_confirmation = "//img[@draggable='false']"
